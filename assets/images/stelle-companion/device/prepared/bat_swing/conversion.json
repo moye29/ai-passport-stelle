@@ -1,0 +1,239 @@
+{
+  "operation": "geometry only; no pose replacement or AI edits",
+  "durations_ms": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+  ],
+  "frames": [
+    {
+      "frame": "00.png",
+      "source_sha256": "898fd314ac8f5adb56aaef884a36ddb13878a4b14164e96fc5007846165daf66",
+      "source_size": [
+        160,
+        160
+      ],
+      "scale": 1.0,
+      "translation": [
+        0,
+        0
+      ],
+      "feet": [
+        80.0,
+        153
+      ],
+      "sole_span": [
+        46,
+        114
+      ],
+      "hair_top": 31,
+      "bounds": [
+        12,
+        31,
+        140,
+        154
+      ]
+    },
+    {
+      "frame": "01.png",
+      "source_sha256": "599c45fc7cfd5e4f4da6d19672232ac1602929051adb115b23cf7af0ed58ab71",
+      "source_size": [
+        160,
+        160
+      ],
+      "scale": 1.0,
+      "translation": [
+        0,
+        0
+      ],
+      "feet": [
+        80.0,
+        153
+      ],
+      "sole_span": [
+        46,
+        114
+      ],
+      "hair_top": 31,
+      "bounds": [
+        11,
+        31,
+        140,
+        154
+      ]
+    },
+    {
+      "frame": "02.png",
+      "source_sha256": "251679a35ac735180e8e3e96c0ed58329add28d2ef7811ad32a320b6d222f5da",
+      "source_size": [
+        160,
+        160
+      ],
+      "scale": 1.0,
+      "translation": [
+        0,
+        0
+      ],
+      "feet": [
+        80.0,
+        153
+      ],
+      "sole_span": [
+        46,
+        114
+      ],
+      "hair_top": 31,
+      "bounds": [
+        26,
+        31,
+        140,
+        154
+      ]
+    },
+    {
+      "frame": "03.png",
+      "source_sha256": "b5a37c8f9cd2897749d720a58169ff6e0c608743a5ee9d2adb800f3e51a755e7",
+      "source_size": [
+        160,
+        160
+      ],
+      "scale": 1.0,
+      "translation": [
+        1,
+        0
+      ],
+      "feet": [
+        80.0,
+        153
+      ],
+      "sole_span": [
+        46,
+        114
+      ],
+      "hair_top": 30,
+      "bounds": [
+        26,
+        24,
+        144,
+        154
+      ]
+    },
+    {
+      "frame": "04.png",
+      "source_sha256": "d713f9ad7126584592f1a0e428e5cef979a2aeb2280603beb2fdfbaec0d938c8",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "scale": 0.13118279569892474,
+      "translation": [
+        -8,
+        0
+      ],
+      "feet": [
+        79.5,
+        153
+      ],
+      "sole_span": [
+        37,
+        122
+      ],
+      "hair_top": 32,
+      "bounds": [
+        9,
+        31,
+        143,
+        154
+      ]
+    },
+    {
+      "frame": "05.png",
+      "source_sha256": "e962b052a07a1b9fe80ce3d519c32f580aca531f2cc32aa4f5d2118d31306411",
+      "source_size": [
+        160,
+        160
+      ],
+      "scale": 1.0,
+      "translation": [
+        1,
+        0
+      ],
+      "feet": [
+        80.0,
+        153
+      ],
+      "sole_span": [
+        46,
+        114
+      ],
+      "hair_top": 30,
+      "bounds": [
+        17,
+        29,
+        141,
+        154
+      ]
+    },
+    {
+      "frame": "06.png",
+      "source_sha256": "e5cc0e8ee6e21ce740ceb04627c5bab989a9aa057e7a89eda46417635391edf9",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "scale": 0.12978723404255318,
+      "translation": [
+        -1,
+        -1
+      ],
+      "feet": [
+        80.0,
+        153
+      ],
+      "sole_span": [
+        38,
+        122
+      ],
+      "hair_top": 31,
+      "bounds": [
+        24,
+        30,
+        137,
+        154
+      ]
+    },
+    {
+      "frame": "07.png",
+      "source_sha256": "821389d168097a485b8f28565603de7ad0383586085043095dec4001dab772a9",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "scale": 0.12978723404255318,
+      "translation": [
+        -1,
+        -1
+      ],
+      "feet": [
+        80.0,
+        153
+      ],
+      "sole_span": [
+        38,
+        122
+      ],
+      "hair_top": 31,
+      "bounds": [
+        28,
+        30,
+        137,
+        154
+      ]
+    }
+  ]
+}

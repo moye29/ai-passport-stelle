@@ -1,0 +1,68 @@
+{
+  "canvas": [
+    216,
+    146
+  ],
+  "source_rights": "User supplied; redistribution rights unspecified",
+  "frames": [
+    {
+      "source": "0 - position updated.png",
+      "device": "0.png",
+      "sha256": "7b55bc29b1bd13db1982b9a34885332a1c2d9c80e298f68c66075e9f08018403",
+      "device_sha256": "7f4f59a6c58eb08e5ca0383a89a65992ceeecccce381a4b62ea84299b92e8152",
+      "crop": [
+        5,
+        59,
+        92,
+        84
+      ]
+    },
+    {
+      "source": "1 - position updated.png",
+      "device": "1.png",
+      "sha256": "178a94cf1eee2cb30e88807c04cc86860a65851b4e8d0aed0d0058887955adeb",
+      "device_sha256": "63a35d0957b3b38c6f386583696af9cd273b86adaba799fb28f334e788ee5b37",
+      "crop": [
+        5,
+        59,
+        208,
+        84
+      ]
+    },
+    {
+      "source": "2 - position updated.png",
+      "device": "2-1.png",
+      "sha256": "fde773a4203f1b4211552f19f9ef2690a724904d999a50e3766bab42df799d09",
+      "device_sha256": "4cbaa80dddeac15d84871030fb1258174d88b6efae2b0b8d94e480b4cf763e6d",
+      "crop": [
+        2,
+        34,
+        152,
+        112
+      ]
+    },
+    {
+      "source": "0 - position updated.png",
+      "device": "2-2.png",
+      "sha256": "7b55bc29b1bd13db1982b9a34885332a1c2d9c80e298f68c66075e9f08018403",
+      "device_sha256": "7f4f59a6c58eb08e5ca0383a89a65992ceeecccce381a4b62ea84299b92e8152",
+      "crop": [
+        5,
+        59,
+        92,
+        84
+      ]
+    }
+  ],
+  "unique_image_bytes": 126672,
+  "hit_bytes": 1520,
+  "hit_seconds": 0.24,
+  "hit_source_path": "assets/music/stelle-battle-candidates/A-punch.sbgm",
+  "original_hit_sha256": "975296da722595a2225cac1ff85fc3a4a24b945f7831d61bd374f214ae58361c",
+  "hit_source_sha256": "14c58369ec543cfa7b6c76f80ec0729bab5a0c10c2ee25895ba0a13daad54805",
+  "hit_sha256": "14c58369ec543cfa7b6c76f80ec0729bab5a0c10c2ee25895ba0a13daad54805",
+  "generated": {
+    "battle_pack.c": "cd43d38bd9e41285c04ff186ad8d0c7588a42e5768194055163cb06fe6acdb90",
+    "battle_pack.h": "93f67cbe249afc843385a0f9e463d6ef871f43427879e900a4509bc485218946"
+  }
+}

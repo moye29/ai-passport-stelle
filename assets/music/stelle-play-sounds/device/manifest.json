@@ -1,0 +1,42 @@
+{
+  "order": "01 -> 02 -> 03 -> 01",
+  "restart": "first clip after reboot",
+  "start_delay_ms": 200,
+  "gain": "original source level, no normalization or pixel effect",
+  "edge_fade_ms": 4,
+  "format": "12 kHz mono independent IMA blocks, 16 kHz playback",
+  "source_rights": "user-provided files; no redistribution license supplied",
+  "bytes": 20620,
+  "clips": [
+    {
+      "source": "bat_swing_01.mp3",
+      "source_sha256": "7a8393a280b0a6a7f25ebcd81d8bf623c38408d3c9d741bbb2db34f425d7b488",
+      "source_seconds": 0.88,
+      "device": "bat_swing_01.sbgm",
+      "device_bytes": 6728,
+      "playback_seconds": 1.08,
+      "peak": 6172,
+      "device_sha256": "9dbfd89ff809ee82bfc6b3f45ea647e0ebcce6543d1164f56ab881d3bef14c08"
+    },
+    {
+      "source": "bat_swing_02.mp3",
+      "source_sha256": "096070ce1f109241987bb3eb9799fa5bf63a5189d4cf714cf2269e43e2b25d92",
+      "source_seconds": 0.902,
+      "device": "bat_swing_02.sbgm",
+      "device_bytes": 6976,
+      "playback_seconds": 1.12,
+      "peak": 5950,
+      "device_sha256": "ac087947524a5de6cc58fd9ad79143c1360c5a01d5086375dc8011309747ee65"
+    },
+    {
+      "source": "bat_swing_03.mp3",
+      "source_sha256": "8558fe39854f3c0349967a5db0e113dcc609cbaf979978cb83acd504e9b19766",
+      "source_seconds": 0.895,
+      "device": "bat_swing_03.sbgm",
+      "device_bytes": 6852,
+      "playback_seconds": 1.1,
+      "peak": 6029,
+      "device_sha256": "525a25860e93b1c81d1cad2032b19b07fe1a55762b45ac6397cfce2449887b5d"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "canvas": [
+    216,
+    136
+  ],
+  "frame_ms": 200,
+  "cycle_ms": 1600,
+  "frame_count": 8,
+  "palette_colors": 81,
+  "storage_bytes": 80360,
+  "format": "shared RGB565 palette; indexed base; 7-bit skip/literal delta runs per row",
+  "rights": "User-provided images; redistribution rights unspecified",
+  "frames": [
+    {
+      "file": "anniv_0.png",
+      "sha256": "efef1b128e15f2551061dd22b8567e8ad4486278ca92dd84d30375c3ac8d5d9b"
+    },
+    {
+      "file": "anniv_1.png",
+      "sha256": "62c7c6893364deab8317e805deab35c6dc3a7bd3fc7338e968d6b3f2a6fe7619"
+    },
+    {
+      "file": "anniv_2.png",
+      "sha256": "445da07065907d634854997ee40282ff282484ee648b6a3cd8a9c77cd4404f90"
+    },
+    {
+      "file": "anniv_3.png",
+      "sha256": "89c23d63d1801eec50ab0ee454157bc3f64e534598c97c8d0d1f578ea3373212"
+    },
+    {
+      "file": "anniv_4.png",
+      "sha256": "a8d13e16a8a592cf3ec3b76b8b6e4f4aacc2f4ad3cd4cc857fae4ef5db5e1c6c"
+    },
+    {
+      "file": "anniv_5.png",
+      "sha256": "094ec00d8b3471fd707f230b4eb8dc811eb16b91ebb406cbd2d3ec5cfc46b586"
+    },
+    {
+      "file": "anniv_6.png",
+      "sha256": "3b446c83709233e3fd29ce0e9b4abc5e6f591e35010b443d3cd011ecfb500769"
+    },
+    {
+      "file": "anniv_7.png",
+      "sha256": "865b5c33375fff2c5a7ac7924fc50bb2bbba09bb274a04aa189468de4d45d20b"
+    }
+  ],
+  "generated": {
+    "anniv_pack.c": "cd12e880295e8eb8dba1e267b9c987d1d07a61bd56a1a21717d0117e3eafa5e4",
+    "anniv_pack.h": "c0b5d07869dcf6d80ff283c419788d3eeb450665e3af2d99063a9d2f18b5ec7d"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "creator": "Kenney",
+  "license": "CC0",
+  "source_page": "https://kenney.nl/assets/impact-sounds",
+  "download": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+  "processing": "12kHz mono IMA, silence trimmed, max 300ms, 2ms attack/8ms tail, peak matched",
+  "selected": "A-punch",
+  "candidates": [
+    {
+      "label": "A-punch",
+      "source": "impactPunch_medium_000.ogg",
+      "source_seconds": 0.4305833333333333,
+      "prepared_seconds": 0.24,
+      "source_sha256": "486988aa2d6440ffc4c62a0e8ccf3c23673ba84424bd4723378d451b7255eb5c",
+      "sbgm_sha256": "14c58369ec543cfa7b6c76f80ec0729bab5a0c10c2ee25895ba0a13daad54805",
+      "bytes": 1520,
+      "peak": 20193
+    }
+  ]
+}

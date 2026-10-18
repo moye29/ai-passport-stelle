@@ -1,0 +1,4 @@
+# This generated manifest is verified byte-for-byte on every platform.
+assets/images/stelle-companion/device/trailblaze/manifest.json text eol=lf
+main/generated/** text eol=lf
+assets/certificates/** text eol=lf

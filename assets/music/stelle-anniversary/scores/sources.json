@@ -1,0 +1,20 @@
+[
+  {
+    "file": "star-rail-tokiku-piano.pdf",
+    "arranger": "Tokiku",
+    "source": "https://tokiku-music.github.io/music/star_rail/star_rail.pdf",
+    "source_page": "https://tokiku-music.github.io/music/star_rail",
+    "rights_note": "Free download offered by arranger; no broader redistribution license verified.",
+    "sha256": "91af00c814515a24d3e3e00fbd2a37051ccaf461b35080a29ea69cb39341130f",
+    "bytes": 62316
+  },
+  {
+    "file": "star-rail-frostwing98-parts.pdf",
+    "arranger": "frostwing98",
+    "source": "https://frostwing98.com/scores/starrail-parts.pdf",
+    "source_page": "https://frostwing98.com/scores/",
+    "rights_note": "Author page states personal/noncommercial use and GPL v3; underlying composition rights remain separate.",
+    "sha256": "be6d31e15a3828b5c693902c14dfa31e636e33d56a17b5163b3c34e0a05bedf8",
+    "bytes": 82872
+  }
+]

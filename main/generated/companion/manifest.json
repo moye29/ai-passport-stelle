@@ -1,0 +1,102 @@
+{
+  "name": "stelle",
+  "cell": [
+    160,
+    160
+  ],
+  "flash_budget_bytes": 2900000,
+  "states": [
+    {
+      "name": "idle",
+      "frames": [
+        "frames/idle/000.png",
+        "frames/idle/001.png",
+        "frames/idle/002.png",
+        "frames/idle/003.png"
+      ],
+      "durations_ms": [
+        9620,
+        100,
+        120,
+        160
+      ]
+    },
+    {
+      "name": "greeting",
+      "frames": [
+        "frames/greeting/000.png",
+        "frames/greeting/001.png",
+        "frames/greeting/002.png"
+      ],
+      "durations_ms": [
+        120,
+        180,
+        120
+      ]
+    },
+    {
+      "name": "focus",
+      "frames": [
+        "frames/focus/000.png",
+        "frames/focus/001.png",
+        "frames/focus/002.png",
+        "frames/focus/003.png",
+        "frames/focus/004.png",
+        "frames/focus/005.png"
+      ],
+      "durations_ms": [
+        180,
+        180,
+        240,
+        260,
+        240,
+        260
+      ]
+    },
+    {
+      "name": "celebration",
+      "frames": [
+        "frames/celebration/000.png",
+        "frames/celebration/001.png",
+        "frames/celebration/002.png",
+        "frames/celebration/003.png",
+        "frames/celebration/004.png"
+      ],
+      "durations_ms": [
+        100,
+        100,
+        150,
+        150,
+        100
+      ]
+    },
+    {
+      "name": "bat_swing",
+      "frames": [
+        "frames/bat_swing/000.png",
+        "frames/bat_swing/001.png",
+        "frames/bat_swing/002.png",
+        "frames/bat_swing/003.png",
+        "frames/bat_swing/004.png",
+        "frames/bat_swing/005.png"
+      ],
+      "durations_ms": [
+        100,
+        100,
+        120,
+        140,
+        140,
+        110
+      ]
+    },
+    {
+      "name": "sleep",
+      "frames": [
+        "frames/sleep/000.png"
+      ],
+      "durations_ms": [
+        1000
+      ]
+    }
+  ]
+}

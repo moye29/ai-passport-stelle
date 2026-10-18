@@ -1,0 +1,368 @@
+{
+  "right": [
+    {
+      "beat": 7,
+      "duration": 1,
+      "midi": 74,
+      "velocity": 75
+    },
+    {
+      "beat": 8.0,
+      "duration": 0.3333333333333333,
+      "midi": 84,
+      "velocity": 82
+    },
+    {
+      "beat": 8.333333333333334,
+      "duration": 0.3333333333333333,
+      "midi": 86,
+      "velocity": 82
+    },
+    {
+      "beat": 8.666666666666666,
+      "duration": 0.3333333333333333,
+      "midi": 83,
+      "velocity": 82
+    },
+    {
+      "beat": 9,
+      "duration": 2,
+      "midi": 81,
+      "velocity": 76
+    },
+    {
+      "beat": 16.0,
+      "duration": 0.3333333333333333,
+      "midi": 84,
+      "velocity": 82
+    },
+    {
+      "beat": 16.333333333333332,
+      "duration": 0.3333333333333333,
+      "midi": 86,
+      "velocity": 82
+    },
+    {
+      "beat": 16.666666666666668,
+      "duration": 0.3333333333333333,
+      "midi": 83,
+      "velocity": 82
+    },
+    {
+      "beat": 17,
+      "duration": 2,
+      "midi": 81,
+      "velocity": 76
+    },
+    {
+      "beat": 11,
+      "duration": 1,
+      "midi": 79,
+      "velocity": 72
+    },
+    {
+      "beat": 12,
+      "duration": 0.5,
+      "midi": 78,
+      "velocity": 72
+    },
+    {
+      "beat": 12.5,
+      "duration": 0.5,
+      "midi": 79,
+      "velocity": 75
+    },
+    {
+      "beat": 13,
+      "duration": 2,
+      "midi": 81,
+      "velocity": 80
+    },
+    {
+      "beat": 15,
+      "duration": 0.5,
+      "midi": 81,
+      "velocity": 75
+    },
+    {
+      "beat": 15.5,
+      "duration": 0.5,
+      "midi": 74,
+      "velocity": 70
+    },
+    {
+      "beat": 19,
+      "duration": 0.5,
+      "midi": 81,
+      "velocity": 77
+    },
+    {
+      "beat": 19.5,
+      "duration": 0.5,
+      "midi": 88,
+      "velocity": 85
+    },
+    {
+      "beat": 20,
+      "duration": 2,
+      "midi": 90,
+      "velocity": 86
+    },
+    {
+      "beat": 22,
+      "duration": 1,
+      "midi": 86,
+      "velocity": 80
+    },
+    {
+      "beat": 23,
+      "duration": 0.5,
+      "midi": 86,
+      "velocity": 82
+    },
+    {
+      "beat": 23.5,
+      "duration": 0.5,
+      "midi": 88,
+      "velocity": 85
+    }
+  ],
+  "secondary_left": [
+    {
+      "beat": 0,
+      "duration": 1,
+      "midi": 62,
+      "velocity": 50
+    },
+    {
+      "beat": 1,
+      "duration": 1,
+      "midi": 62,
+      "velocity": 50
+    },
+    {
+      "beat": 2,
+      "duration": 1,
+      "midi": 62,
+      "velocity": 50
+    },
+    {
+      "beat": 3,
+      "duration": 1,
+      "midi": 62,
+      "velocity": 50
+    },
+    {
+      "beat": 4,
+      "duration": 1,
+      "midi": 62,
+      "velocity": 50
+    },
+    {
+      "beat": 5,
+      "duration": 1,
+      "midi": 62,
+      "velocity": 50
+    },
+    {
+      "beat": 6,
+      "duration": 1,
+      "midi": 62,
+      "velocity": 50
+    },
+    {
+      "beat": 7,
+      "duration": 1,
+      "midi": 62,
+      "velocity": 50
+    },
+    {
+      "beat": 8,
+      "duration": 1,
+      "midi": 62,
+      "velocity": 50
+    },
+    {
+      "beat": 9,
+      "duration": 1,
+      "midi": 62,
+      "velocity": 50
+    },
+    {
+      "beat": 10,
+      "duration": 1,
+      "midi": 62,
+      "velocity": 50
+    },
+    {
+      "beat": 11,
+      "duration": 1,
+      "midi": 62,
+      "velocity": 50
+    },
+    {
+      "beat": 12,
+      "duration": 1,
+      "midi": 62,
+      "velocity": 50
+    },
+    {
+      "beat": 13,
+      "duration": 1,
+      "midi": 62,
+      "velocity": 50
+    },
+    {
+      "beat": 14,
+      "duration": 1,
+      "midi": 62,
+      "velocity": 50
+    },
+    {
+      "beat": 15,
+      "duration": 1,
+      "midi": 62,
+      "velocity": 50
+    },
+    {
+      "beat": 16,
+      "duration": 1,
+      "midi": 62,
+      "velocity": 50
+    },
+    {
+      "beat": 17,
+      "duration": 1,
+      "midi": 62,
+      "velocity": 50
+    },
+    {
+      "beat": 18,
+      "duration": 1,
+      "midi": 62,
+      "velocity": 50
+    },
+    {
+      "beat": 19,
+      "duration": 1,
+      "midi": 62,
+      "velocity": 50
+    },
+    {
+      "beat": 20,
+      "duration": 1,
+      "midi": 60,
+      "velocity": 56
+    },
+    {
+      "beat": 20,
+      "duration": 1,
+      "midi": 69,
+      "velocity": 56
+    },
+    {
+      "beat": 21,
+      "duration": 1,
+      "midi": 60,
+      "velocity": 56
+    },
+    {
+      "beat": 21,
+      "duration": 1,
+      "midi": 69,
+      "velocity": 56
+    },
+    {
+      "beat": 22,
+      "duration": 1,
+      "midi": 60,
+      "velocity": 56
+    },
+    {
+      "beat": 22,
+      "duration": 1,
+      "midi": 69,
+      "velocity": 56
+    },
+    {
+      "beat": 23,
+      "duration": 1,
+      "midi": 60,
+      "velocity": 56
+    },
+    {
+      "beat": 23,
+      "duration": 1,
+      "midi": 69,
+      "velocity": 56
+    }
+  ],
+  "secondary": [
+    {
+      "beat": 21.0,
+      "duration": 0.125,
+      "midi": 72,
+      "velocity": 66
+    },
+    {
+      "beat": 21.125,
+      "duration": 0.125,
+      "midi": 74,
+      "velocity": 66
+    },
+    {
+      "beat": 21.25,
+      "duration": 0.125,
+      "midi": 72,
+      "velocity": 66
+    },
+    {
+      "beat": 21.375,
+      "duration": 0.125,
+      "midi": 74,
+      "velocity": 66
+    },
+    {
+      "beat": 21.5,
+      "duration": 0.125,
+      "midi": 72,
+      "velocity": 66
+    },
+    {
+      "beat": 21.625,
+      "duration": 0.125,
+      "midi": 74,
+      "velocity": 66
+    },
+    {
+      "beat": 21.75,
+      "duration": 0.125,
+      "midi": 72,
+      "velocity": 66
+    },
+    {
+      "beat": 21.875,
+      "duration": 0.125,
+      "midi": 74,
+      "velocity": 66
+    },
+    {
+      "beat": 22,
+      "duration": 1,
+      "midi": 74,
+      "velocity": 80
+    },
+    {
+      "beat": 23,
+      "duration": 0.5,
+      "midi": 74,
+      "velocity": 82
+    },
+    {
+      "beat": 23.5,
+      "duration": 0.5,
+      "midi": 76,
+      "velocity": 85
+    }
+  ]
+}

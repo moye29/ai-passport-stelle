@@ -1,0 +1,340 @@
+{
+  "ok": true,
+  "name": "stelle",
+  "cell": [
+    160,
+    160
+  ],
+  "format": "RGB565A8",
+  "pixel_bytes": 1920000,
+  "frames": [
+    {
+      "state": "idle",
+      "index": 0,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\idle\\00.png",
+      "sha256": "e0db33467cc8479b76a78c0c0b02b4777ba7e6d94609093543c702f25ebe3b1d",
+      "bbox": [
+        36,
+        30,
+        126,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "idle",
+      "index": 1,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\idle\\01.png",
+      "sha256": "d0a76f29470d746c13d293e72dee58f120a2424033140ba8139ab6a714fd05e7",
+      "bbox": [
+        38,
+        32,
+        125,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "idle",
+      "index": 2,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\idle\\02.png",
+      "sha256": "1e38ea307ab2a21c6070b83163f8386e213e6404f1eb92636aaa4d74120bc442",
+      "bbox": [
+        36,
+        29,
+        127,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "idle",
+      "index": 3,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\idle\\03.png",
+      "sha256": "ce9fd9d041219cd52a1db90cf341e6e6d1d49176fecd41b3b7afc14b0f9bffb7",
+      "bbox": [
+        36,
+        27,
+        128,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "greeting",
+      "index": 0,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\greeting\\00.png",
+      "sha256": "46c75bc06631566cce46c5c36133a3ec66f83b3e54abff4f1c93d785b12823bf",
+      "bbox": [
+        40,
+        30,
+        124,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "greeting",
+      "index": 1,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\greeting\\01.png",
+      "sha256": "a7a009fd2306328a8cf96c5867c6646636c2ccc6b94e85f5fdf4c7b747119eab",
+      "bbox": [
+        37,
+        30,
+        127,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "greeting",
+      "index": 2,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\greeting\\02.png",
+      "sha256": "46c75bc06631566cce46c5c36133a3ec66f83b3e54abff4f1c93d785b12823bf",
+      "bbox": [
+        40,
+        30,
+        124,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "focus",
+      "index": 0,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\focus\\00.png",
+      "sha256": "7a88d294f8ab4ca9318001fdd23c4ffe53742696a7a72c55d82af9851cb1872d",
+      "bbox": [
+        39,
+        29,
+        124,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "focus",
+      "index": 1,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\focus\\01.png",
+      "sha256": "8d23a23631e79a881cf218477aa8bbaf5f3eddcf169ac9c9752d140102d8be61",
+      "bbox": [
+        37,
+        29,
+        126,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "focus",
+      "index": 2,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\focus\\02.png",
+      "sha256": "f425afc63edd73c77f5888033b6fdb9830f644bdb49d786538bb87125d524873",
+      "bbox": [
+        37,
+        29,
+        126,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "focus",
+      "index": 3,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\focus\\03.png",
+      "sha256": "66802c30bbe3797c901fc307f2beb8ec976062969bdec4a855ef112c7f23f4bd",
+      "bbox": [
+        36,
+        27,
+        126,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "focus",
+      "index": 4,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\focus\\04.png",
+      "sha256": "7ca2aee462fb9e32959dc92e6125a59fd2c7d23d4e21f16e069b368411d9a803",
+      "bbox": [
+        24,
+        27,
+        140,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "focus",
+      "index": 5,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\focus\\05.png",
+      "sha256": "66802c30bbe3797c901fc307f2beb8ec976062969bdec4a855ef112c7f23f4bd",
+      "bbox": [
+        36,
+        27,
+        126,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "celebration",
+      "index": 0,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\celebration\\00.png",
+      "sha256": "9404c56ec3ba9426851b3994441a363061efdd84759235a59fea42382a67989f",
+      "bbox": [
+        28,
+        54,
+        132,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "celebration",
+      "index": 1,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\celebration\\01.png",
+      "sha256": "193062205c17c2af48a3fc76bcc361655513d3ec5eeed6eeeb6f1d1f0e36dbe0",
+      "bbox": [
+        28,
+        20,
+        132,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "celebration",
+      "index": 2,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\celebration\\02.png",
+      "sha256": "0ae044dd0b4da217f78d5280f67532fb9da922e8c6e126e9d78c9e0ba2418c6a",
+      "bbox": [
+        24,
+        18,
+        135,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "celebration",
+      "index": 3,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\celebration\\03.png",
+      "sha256": "0ae044dd0b4da217f78d5280f67532fb9da922e8c6e126e9d78c9e0ba2418c6a",
+      "bbox": [
+        24,
+        18,
+        135,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "celebration",
+      "index": 4,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\celebration\\04.png",
+      "sha256": "9404c56ec3ba9426851b3994441a363061efdd84759235a59fea42382a67989f",
+      "bbox": [
+        28,
+        54,
+        132,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "bat_swing",
+      "index": 0,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\bat_swing\\00.png",
+      "sha256": "969baf01f16039c1113041f7fd11e03037f92c829610cc92ff94df4379f76a64",
+      "bbox": [
+        32,
+        30,
+        136,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "bat_swing",
+      "index": 1,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\bat_swing\\01.png",
+      "sha256": "6ad0fe2842f548a9717c2803405c29a4835cef9473e5d7800be8d15233610df1",
+      "bbox": [
+        20,
+        30,
+        139,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "bat_swing",
+      "index": 2,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\bat_swing\\02.png",
+      "sha256": "b5a37c8f9cd2897749d720a58169ff6e0c608743a5ee9d2adb800f3e51a755e7",
+      "bbox": [
+        25,
+        24,
+        143,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "bat_swing",
+      "index": 3,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\bat_swing\\03.png",
+      "sha256": "e962b052a07a1b9fe80ce3d519c32f580aca531f2cc32aa4f5d2118d31306411",
+      "bbox": [
+        16,
+        29,
+        140,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "bat_swing",
+      "index": 4,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\bat_swing\\04.png",
+      "sha256": "c345e442c0d2ced2327fbdd5ca3b91cdd503733ebda11002036d2912c39cb223",
+      "bbox": [
+        28,
+        29,
+        140,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "bat_swing",
+      "index": 5,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\bat_swing\\05.png",
+      "sha256": "78b04f1415f0a863202156ae23b363322abf830786c317ea64927d79a41cf40f",
+      "bbox": [
+        36,
+        30,
+        145,
+        154
+      ],
+      "bytes": 76800
+    },
+    {
+      "state": "sleep",
+      "index": 0,
+      "source": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\frames\\sleep\\00.png",
+      "sha256": "b3e225aca28e4a60aa87752ca9173bf0f9991d1f4006ec27c3e1ee9d50e3dec2",
+      "bbox": [
+        13,
+        56,
+        146,
+        158
+      ],
+      "bytes": 76800
+    }
+  ],
+  "visual_qa": "NOT RUN by exporter; inspect identity, motion, holes and chroma separately",
+  "input_manifest": "F:\\Documents\\Claude\\passport-stelle\\assets\\images\\stelle-companion\\device\\sprites.json",
+  "manifest_sha256": "c1a976fe34b68db35d410994c81cc2245c2f8e369c608156c709f9a3fe1dc6ec"
+}

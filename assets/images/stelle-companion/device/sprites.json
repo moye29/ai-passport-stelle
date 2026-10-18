@@ -1,0 +1,132 @@
+{
+  "name": "stelle",
+  "cell": [
+    160,
+    160
+  ],
+  "flash_budget_bytes": 2900000,
+  "states": [
+    {
+      "name": "idle",
+      "frames": [
+        "frames/idle/00.png",
+        "frames/idle/01.png",
+        "frames/idle/02.png",
+        "frames/idle/04.png",
+        "frames/idle/05.png"
+      ],
+      "durations_ms": [
+        2500,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "name": "greeting",
+      "frames": [
+        "frames/greeting/00.png",
+        "frames/greeting/01.png",
+        "frames/greeting/02.png",
+        "frames/greeting/03.png",
+        "frames/greeting/04.png"
+      ],
+      "durations_ms": [
+        200,
+        200,
+        200,
+        200,
+        200
+      ]
+    },
+    {
+      "name": "focus",
+      "frames": [
+        "frames/focus/00.png",
+        "frames/focus/01.png",
+        "frames/focus/02.png",
+        "frames/focus/03.png",
+        "frames/focus/04.png",
+        "frames/focus/05.png",
+        "frames/focus/06.png",
+        "frames/focus/07.png",
+        "frames/focus/08.png"
+      ],
+      "durations_ms": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ]
+    },
+    {
+      "name": "celebration",
+      "frames": [
+        "frames/celebration/00.png",
+        "frames/celebration/01.png",
+        "frames/celebration/02.png",
+        "frames/celebration/03.png",
+        "frames/celebration/04.png"
+      ],
+      "durations_ms": [
+        200,
+        200,
+        200,
+        200,
+        200
+      ]
+    },
+    {
+      "name": "bat_swing",
+      "frames": [
+        "prepared/bat_swing/00.png",
+        "prepared/bat_swing/01.png",
+        "prepared/bat_swing/02.png",
+        "prepared/bat_swing/03.png",
+        "prepared/bat_swing/04.png",
+        "prepared/bat_swing/05.png",
+        "prepared/bat_swing/06.png",
+        "prepared/bat_swing/07.png"
+      ],
+      "durations_ms": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "name": "sleep",
+      "frames": [
+        "prepared/sleep/00.png",
+        "prepared/sleep/01.png",
+        "prepared/sleep/02.png",
+        "prepared/sleep/03.png",
+        "prepared/sleep/04.png",
+        "prepared/sleep/05.png",
+        "prepared/sleep/06.png",
+        "prepared/sleep/07.png"
+      ],
+      "durations_ms": [
+        3000,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "canvas": [
+    216,
+    146
+  ],
+  "origin": "user_native_device",
+  "format": "2-bit packet kind + 6-bit count-minus-one: transparent/opaque/repeat RGBA/literal RGBA",
+  "rights": "User supplied; redistribution rights unspecified",
+  "frames": [
+    {
+      "file": "1 - enemy B.png",
+      "source_sha256": "c9057d88b7f3ce397786511b5c42f82759a0bf1cff49c28449f25da8d0c2e99b",
+      "device_sha256": "31b84e9b1961c0c567e17ea7a74a48596baf2ea2a23f4290d6686f3bcf40f825"
+    },
+    {
+      "file": "2 - enemy B.png",
+      "source_sha256": "d3427da55286d7eb324cfaa6a8bac32fa44edff618b302e870b33ce9f3d3abbe",
+      "device_sha256": "8269850e5b10c554ff6e5346bc7f75e3d0a9d9fc17db75b3408509b5603ffc7a"
+    }
+  ],
+  "storage_bytes": 54189,
+  "generated": {
+    "enemy_b_pack.c": "dd1f0bc0421cbbee095a50ea450ad17fdfa977e54f363b0a64fb81717e63482e",
+    "enemy_b_pack.h": "bb29075898ebf7969946d2764923d1fe7b5c2d3ebdea2bd24f2ac677d6d2af70"
+  }
+}

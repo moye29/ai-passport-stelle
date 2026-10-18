@@ -1,0 +1,63 @@
+# --- 目标芯片 ---
+CONFIG_IDF_TARGET="esp32c3"
+# 注:ESP32-C3 无 PSRAM,故不设 CONFIG_SPIRAM。
+
+# --- Flash ---
+# FoloToy AI Passport 当前产品/固件基线使用 8MB Flash。
+CONFIG_ESPTOOLPY_FLASHSIZE_8MB=y
+# 固定 8MB 镜像头，关闭 detect，便于 idf.py merge-bin。
+CONFIG_ESPTOOLPY_HEADER_FLASHSIZE_UPDATE=n
+# 默认模板只保留 NVS、PHY data 和占用剩余空间的 factory app；用户可按需修改。
+CONFIG_PARTITION_TABLE_CUSTOM=y
+CONFIG_PARTITION_TABLE_CUSTOM_FILENAME="partitions.csv"
+CONFIG_PARTITION_TABLE_FILENAME="partitions.csv"
+
+# --- 控制台:USB-Serial-JTAG(C3 原生 USB,GPIO18/19)---
+# 不用 UART0:其默认 TX=GPIO21 与本板背光引脚冲突。
+CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG=y
+CONFIG_ESP_CONSOLE_SECONDARY_NONE=y
+
+# --- LVGL ---
+CONFIG_LV_COLOR_DEPTH_16=y
+# 20 ms display refresh period targets up to 50 FPS when rendering and SPI
+# transfer complete within the same budget.
+CONFIG_LV_DEF_REFR_PERIOD=20
+CONFIG_LV_FONT_MONTSERRAT_14=y
+CONFIG_LV_FONT_MONTSERRAT_12=y
+CONFIG_LV_FONT_UNSCII_8=y
+CONFIG_LV_FONT_UNSCII_16=y
+CONFIG_LV_FONT_MONTSERRAT_16=y
+# LVGL 内置 malloc 池大小(KB)。它是独立静态区、不与系统堆共享,配大了会白白占用 RAM。
+# 本 demo UI 简单,24KB 足够;若自建复杂界面出现绘制卡死/看门狗,调大此值。
+CONFIG_LV_MEM_SIZE_KILOBYTES=24
+# QR code widget for the Wi-Fi setup screen (hotspot join code).
+CONFIG_LV_USE_QRCODE=y
+
+# --- 系统 ---
+CONFIG_FREERTOS_HZ=1000
+# Keep I2S DMA serviced during NVS writes while anniversary music is playing.
+CONFIG_I2S_ISR_IRAM_SAFE=y
+
+# --- Bluetooth ---
+# The Stelle companion does not use BLE (Wi-Fi setup uses a SoftAP portal), so
+# the controller and NimBLE host are left out to free RAM for Wi-Fi.
+CONFIG_BT_ENABLED=n
+
+# --- Wi-Fi setup portal ---
+# The captive-portal page and its form post are small; keep the server lean.
+CONFIG_HTTPD_MAX_REQ_HDR_LEN=1024
+CONFIG_HTTPD_MAX_URI_LEN=512
+CONFIG_LWIP_MAX_SOCKETS=12
+# Network time: Aliyun, cn.pool and pool.ntp.org.
+CONFIG_LWIP_SNTP_MAX_SERVERS=3
+
+# Release idle TLS record/handshake buffers so manual voice codecs fit without PSRAM.
+# Certificate validation stays enabled; each new connection creates a fresh client.
+CONFIG_MBEDTLS_DYNAMIC_BUFFER=y
+CONFIG_MBEDTLS_DYNAMIC_FREE_CONFIG_DATA=y
+CONFIG_MBEDTLS_DYNAMIC_FREE_CA_CERT=y
+CONFIG_MBEDTLS_SSL_KEEP_PEER_CERTIFICATE=n
+CONFIG_MBEDTLS_X509_TRUSTED_CERT_CALLBACK=y
+# Four static RX buffers match the four-frame BA window; voice uses little bandwidth.
+CONFIG_ESP_WIFI_STATIC_RX_BUFFER_NUM=4
+CONFIG_ESP_WIFI_RX_BA_WIN=4

@@ -1,0 +1,35 @@
+{
+  "name": "Stelle Chat 16",
+  "source": "GNU Unifont 16.0.04",
+  "license": "SIL OFL 1.1",
+  "source_sha256": "f9c8c7802453f47be02677176aeac2342ee96d354fad7a26cedcce48e68e1d9f",
+  "ranges": [
+    [
+      32,
+      126
+    ],
+    [
+      8192,
+      8303
+    ],
+    [
+      12288,
+      12543
+    ],
+    [
+      19968,
+      40959
+    ],
+    [
+      65280,
+      65519
+    ],
+    [
+      65533,
+      65533
+    ]
+  ],
+  "glyph_count": 21696,
+  "bitmap_bytes": 689440,
+  "missing": []
+}

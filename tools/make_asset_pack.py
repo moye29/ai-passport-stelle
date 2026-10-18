@@ -1,0 +1,194 @@
+#!/usr/bin/env python3
+"""Build the Stelle asset pack (resource partition image) and its C index.
+
+Like the Miki firmware, large images live in a data partition (type data,
+subtype 0x40, at 0x420000) instead of the application: the app maps the
+partition read-only at boot and checks its CRC. This keeps the app small.
+
+Outputs
+  build/assets/stelle_assets.bin        partition image (flash at 0x420000)
+  main/generated/pack/stelle_pack.c/.h  compiled-in index: offsets, sizes,
+                                        crop offsets, frame timings, CRC
+
+Pack layout (little-endian):
+  0   magic "STLP"
+  4   u32 version (1)
+  8   u32 total length in bytes (header + payload)
+  12  u32 image count
+  16  u32 CRC-32 (IEEE) of bytes [32, total length)
+  20  12 reserved bytes (0)
+  32  payload: images, each 4-byte aligned
+Sprite frames are RGB565A8 (RGB565 plane then alpha plane, stride w*2),
+cropped to their visible pixels (width rounded up to a multiple of 4) with the
+crop offset recorded, so drawing places them exactly as the full cell would.
+Rooms are plain RGB565.
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import struct
+import sys
+import zlib
+from pathlib import Path
+
+from PIL import Image, ImageOps
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
+sys.path.insert(0, str(HERE))
+from ui_assets import rooms  # noqa: E402
+from ui_assets.pixelate import pixelate  # noqa: E402
+
+DEVICE = ROOT / "assets/images/stelle-companion/device"
+OUT_BIN = ROOT / "build/assets/stelle_assets.bin"
+OUT_C = ROOT / "main/generated/pack"
+PARTITION_SIZE = 0x200000
+MAGIC, VERSION, HEADER = b"STLP", 1, 32
+
+
+def rgb565(r, g, b):
+    return ((r >> 3) << 11) | ((g >> 2) << 5) | (b >> 3)
+
+
+def sprite_bytes(img):
+    w, h = img.size
+    color, alpha = bytearray(), bytearray()
+    for r, g, b, a in zip(*[iter(img.tobytes())] * 4):
+        color += (rgb565(r, g, b) if a else 0).to_bytes(2, "little")
+        alpha.append(a)
+    return bytes(color + alpha)
+
+
+def room_bytes(img):
+    out = bytearray()
+    for r, g, b in zip(*[iter(img.convert("RGB").tobytes())] * 3):
+        out += rgb565(r, g, b).to_bytes(2, "little")
+    return bytes(out)
+
+
+def crop_frame(img):
+    x0, y0, x1, y1 = img.getchannel("A").getbbox()
+    w = (x1 - x0 + 3) // 4 * 4
+    if x0 + w > img.width:  # keep the rounded width inside the cell
+        x0 = img.width - w
+    return img.crop((x0, y0, x0 + w, y1)), x0, y0
+
+
+def build():
+    manifest = json.loads((DEVICE / "sprites.json").read_text(encoding="utf-8"))
+    cell_w, cell_h = manifest["cell"]
+    images, payload = [], bytearray()
+    shared = {}
+
+    def add(kind, data, w, h, ox=0, oy=0):
+        # Preserve every frame and its timing, sharing only byte-identical pixels.
+        key = (kind, w, h, bytes(data))
+        if key not in shared:
+            while len(payload) % 4:
+                payload.append(0)
+            shared[key] = HEADER + len(payload)
+            payload.extend(data)
+        images.append(dict(kind=kind, offset=shared[key], size=len(data), w=w, h=h, ox=ox, oy=oy))
+
+    states = []
+    for state in manifest["states"]:
+        first = len(images)
+        for rel in state["frames"]:
+            img = Image.open(DEVICE / rel).convert("RGBA")
+            if img.size != (cell_w, cell_h):
+                raise ValueError(f"{rel}: expected {cell_w}x{cell_h}, got {img.size}")
+            crop, ox, oy = crop_frame(img)
+            add("sprite", sprite_bytes(crop), crop.width, crop.height, ox, oy)
+        states.append(dict(name=state["name"], first=first, count=len(state["frames"]),
+                           durations=state["durations_ms"]))
+    room_index = {}
+    for scene in rooms.SCENES:
+        for phase in rooms.PHASES:
+            img = rooms.paint(phase, scene)
+            room_index[(scene, phase)] = len(images)
+            add("room", room_bytes(img), img.width, img.height)
+    # Anniversary page: the Astral Express, converted to pixel art.
+    anniv_index = len(images)
+    art = pixelate()
+    add("room", room_bytes(art), art.width, art.height)
+    room_index["anniv"] = anniv_index
+    # Keep the user's entire Scene-picker illustration, letterboxed to fit.
+    preview = Image.open(ROOT / "assets/images/stelle-companion/source/trailblaze-preview.png").convert("RGB")
+    preview = ImageOps.pad(preview, (rooms.W, rooms.H), method=Image.Resampling.LANCZOS, color=(0, 0, 0))
+    room_index["trailblaze_preview"] = len(images)
+    add("room", room_bytes(preview), preview.width, preview.height)
+
+    total = HEADER + len(payload)
+    if total > PARTITION_SIZE:
+        raise ValueError(f"pack is {total} bytes, partition holds {PARTITION_SIZE}")
+    crc = zlib.crc32(bytes(payload)) & 0xFFFFFFFF
+    header = MAGIC + struct.pack("<IIII", VERSION, total, len(images), crc) + bytes(12)
+    blob = header + bytes(payload)
+    return blob, images, states, room_index, crc, (cell_w, cell_h)
+
+
+def emit_c(images, states, room_index, crc, total, cell):
+    h = ["/* Generated by tools/make_asset_pack.py. Do not edit. */", "#pragma once", "#include <stdint.h>", "",
+         f"#define STELLE_PACK_VERSION {VERSION}U", f"#define STELLE_PACK_SIZE {total}U",
+         f"#define STELLE_PACK_CRC 0x{crc:08X}U", f"#define STELLE_PACK_IMAGES {len(images)}U",
+         f"#define STELLE_CELL_W {cell[0]}", f"#define STELLE_CELL_H {cell[1]}", "",
+         "typedef enum {"]
+    h += [f"    STELLE_{s['name'].upper()} = {i}," for i, s in enumerate(states)]
+    h += [f"    STELLE_STATE_COUNT = {len(states)}", "} stelle_state_t;", "",
+          "typedef struct {", "    uint32_t offset, size;", "    uint16_t w, h;",
+          "    int16_t ox, oy;   /* crop offset inside the full cell (sprites) */",
+          "    uint8_t is_sprite;", "} stelle_pack_image_t;", "",
+          "typedef struct {", "    uint16_t first, count;", "    uint32_t cycle_ms;", "    const uint16_t *durations;",
+          "} stelle_pack_state_t;", "",
+          "extern const stelle_pack_image_t stelle_pack_images[STELLE_PACK_IMAGES];",
+          "extern const stelle_pack_state_t stelle_pack_states[STELLE_STATE_COUNT];",
+          f"extern const uint16_t stelle_pack_rooms[{len(rooms.SCENES)}][{len(rooms.PHASES)}];",
+          f"#define STELLE_PACK_ANNIV {room_index['anniv']}U   /* pixel-art Astral Express */",
+          f"#define STELLE_PACK_TRAILBLAZE_PREVIEW {room_index['trailblaze_preview']}U", ""]
+    c = ["/* Generated by tools/make_asset_pack.py. Do not edit. */", '#include "stelle_pack.h"', "",
+         "const stelle_pack_image_t stelle_pack_images[STELLE_PACK_IMAGES] = {"]
+    for im in images:
+        c.append(f"    {{{im['offset']}U, {im['size']}U, {im['w']}, {im['h']}, {im['ox']}, {im['oy']}, "
+                 f"{1 if im['kind'] == 'sprite' else 0}}},")
+    c.append("};")
+    for s in states:
+        c.append(f"static const uint16_t {s['name']}_ms[] = {{" + ", ".join(str(d) for d in s["durations"]) + "};")
+    c.append("const stelle_pack_state_t stelle_pack_states[STELLE_STATE_COUNT] = {")
+    for s in states:
+        c.append(f"    {{{s['first']}, {s['count']}, {sum(s['durations'])}U, {s['name']}_ms}},")
+    c.append("};")
+    c.append(f"const uint16_t stelle_pack_rooms[{len(rooms.SCENES)}][{len(rooms.PHASES)}] = {{")
+    for scene in rooms.SCENES:
+        c.append("    {" + ", ".join(str(room_index[(scene, p)]) for p in rooms.PHASES) + "},  /* " + scene + " */")
+    c.append("};")
+    return "\n".join(h) + "\n", "\n".join(c) + "\n"
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--check", action="store_true", help="fail if the generated C index or pack is stale")
+    args = ap.parse_args()
+    blob, images, states, room_index, crc, cell = build()
+    header, source = emit_c(images, states, room_index, crc, len(blob), cell)
+    files = {OUT_C / "stelle_pack.h": header, OUT_C / "stelle_pack.c": source}
+    if args.check:
+        stale = [str(p) for p, t in files.items() if not p.exists() or p.read_text(encoding="utf-8") != t]
+        if not OUT_BIN.exists() or OUT_BIN.read_bytes() != blob:
+            stale.append(str(OUT_BIN))
+        print("STALE: " + ", ".join(stale) if stale else "asset pack up to date")
+        return 1 if stale else 0
+    OUT_C.mkdir(parents=True, exist_ok=True)
+    for p, t in files.items():
+        p.write_text(t, encoding="utf-8", newline="\n")
+    OUT_BIN.parent.mkdir(parents=True, exist_ok=True)
+    OUT_BIN.write_bytes(blob)
+    sprites = sum(i["size"] for i in images if i["kind"] == "sprite")
+    roomsz = sum(i["size"] for i in images if i["kind"] == "room")
+    print(json.dumps({"ok": True, "bytes": len(blob), "crc": f"0x{crc:08X}", "images": len(images),
+                      "sprite_bytes": sprites, "room_bytes": roomsz, "free": PARTITION_SIZE - len(blob)}))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

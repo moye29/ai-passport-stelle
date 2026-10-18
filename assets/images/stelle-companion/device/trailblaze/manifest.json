@@ -1,0 +1,141 @@
+{
+  "size": [
+    216,
+    146
+  ],
+  "conversion": "RGB, LANCZOS, centred aspect-preserving crop",
+  "images": [
+    {
+      "index": 0,
+      "source": "Amphoreus - Aedes Elysiae.png",
+      "source_size": [
+        1412,
+        941
+      ],
+      "source_sha256": "d7e676de7f6ca60cc06344e3a58cc911ad70529a88a4159bb3442ba98229905c",
+      "device": "00.png",
+      "device_sha256": "2e9b823d0530d48c968d28d19052e7b46b364d4bba1c2f6a3b0f9581c04f008c"
+    },
+    {
+      "index": 1,
+      "source": "Amphoreus - Okhema.png",
+      "source_size": [
+        1412,
+        941
+      ],
+      "source_sha256": "1515c1ae38a72a67c09a6c1d1a24ddf2bf2bc1061f67a850863fafbf4d3ba73b",
+      "device": "01.png",
+      "device_sha256": "103154151de97411d880ea760d45d9fb92fa92aa8f580a24a736dc1831be4a28"
+    },
+    {
+      "index": 2,
+      "source": "Amphoreus - Vortex of Genesis.png",
+      "source_size": [
+        1526,
+        1031
+      ],
+      "source_sha256": "0d5be1d0f15dbb8b3da672808eaa9b3930f3272b7d27aeb170e2d36c4c6b97f7",
+      "device": "02.png",
+      "device_sha256": "277911ab0e65d70d56d7be49d71935bd57a1f3afcbee7e3b4b3adeb918921063"
+    },
+    {
+      "index": 3,
+      "source": "Astral Express.png",
+      "source_size": [
+        1525,
+        1031
+      ],
+      "source_sha256": "9e0ced0c5963be87e66090bf57f90aca0c99a47ce8bd798da370cac68e899565",
+      "device": "03.png",
+      "device_sha256": "ffde74f8c1d758898cbc5c84156c856d41fb5b47d949ae94091afa22db78856f"
+    },
+    {
+      "index": 4,
+      "source": "Astropolis.png",
+      "source_size": [
+        1232,
+        821
+      ],
+      "source_sha256": "a35e99f20635f757c2afebcb866b7425a7b6bc380970eaf4ef8b1c9fbd4d5336",
+      "device": "04.png",
+      "device_sha256": "bf9dace0f8d701f586e65ba08d00eebf51e8cbe01da34666511fa94dc90e2075"
+    },
+    {
+      "index": 5,
+      "source": "Herta Space Station.png",
+      "source_size": [
+        1526,
+        1030
+      ],
+      "source_sha256": "e641a244a1b374d51468da60c8b4276fa1eeef95a4e1c7c8f6fac38834723108",
+      "device": "05.png",
+      "device_sha256": "8027a61edab7f7700be1006d10b179b2eb625e10b31570f89b0283eb6b3dcfed"
+    },
+    {
+      "index": 6,
+      "source": "JariloVI.png",
+      "source_size": [
+        1412,
+        941
+      ],
+      "source_sha256": "0e48b21ce2a85221ab28390370e989bd5165f6e0eab5411b0efa7321a782ac96",
+      "device": "06.png",
+      "device_sha256": "f7600654851a9374e4b193f5bd8600df3d141cc442dad1df95a532518defd2ac"
+    },
+    {
+      "index": 7,
+      "source": "Penacony - Golden Hour.png",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "source_sha256": "7204da20a2e394b9136cf8e109b99d183e6b498e78490c06a74c16165fd99c0f",
+      "device": "07.png",
+      "device_sha256": "5d928c74518c954f6462f4b9bdb331a0cc75983a0d53be7fdc8d706ebb94fce2"
+    },
+    {
+      "index": 8,
+      "source": "Penacony - The Reverie.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "source_sha256": "eee277e3c996fb1380114e9b590eacf893d2da3c33a5c9bfa7f4d6b53fdaa52a",
+      "device": "08.png",
+      "device_sha256": "5f2932a5e0f58f2c4fd72aa2c7ca1914b3e30451cbb35020f305be37b3a3f9aa"
+    },
+    {
+      "index": 9,
+      "source": "Planarcadia - Duomension City.png",
+      "source_size": [
+        1448,
+        1086
+      ],
+      "source_sha256": "134e8c7e894f5074657366deb8ac1e48c83471aea4f8df052de612d2de0b3981",
+      "device": "09.png",
+      "device_sha256": "8befaaf9c06e1db97a57d70ea3e54480e760dcac58ca8705645b3a3f3ed4a9b1"
+    },
+    {
+      "index": 10,
+      "source": "Planarcadia - World's End Tavern.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "source_sha256": "e9b551b0ba4b221768ac933a33fad24104d803c0ca0c878cbcf53ea471577080",
+      "device": "10.png",
+      "device_sha256": "42f6abe436a2c39585bbaea853593eab23ecbac362e35d782007e78e66ea4518"
+    },
+    {
+      "index": 11,
+      "source": "The Xianzhou Luofu.png",
+      "source_size": [
+        1448,
+        1086
+      ],
+      "source_sha256": "f37c466b1c6ac57809ca87549c83283d1461271fc6bc6a09e57b429c0721143e",
+      "device": "11.png",
+      "device_sha256": "26171bb023a8d2be9efa9baaa457f45bcf47ef6fc6c00efe0048b75fdb00a694"
+    }
+  ]
+}
