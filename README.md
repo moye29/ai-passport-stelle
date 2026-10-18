@@ -13,7 +13,7 @@
 1. **日常陪伴：** 默认眨眼、夜间睡眠待机动画，以及开机／唤醒屏幕时自动打招呼。
 2. **Focus 专注：** 固定 25 分钟倒计时或正计时，支持暂停和保存专注记录。
 3. **Days 日历：** 展示每日累计专注时长的日历，以及《崩坏：星穹铁道》开服纪念页，包含发车动画和芯片风格音乐。
-4. **Chat 对话：** 通过小智AI进行非连续语音对话，本地保存最近 15 条文字聊天记录。需要连接 Wi-Fi 后在 [xiaozhi.me](https://xiaozhi.me/) 绑定设备。
+4. **Chat 对话：** 通过小智AI进行非连续语音对话，本地保存最近 15 条文字聊天记录。需要连接 Wi-Fi 后在 [xiaozhi.me](https://xiaozhi.me/console/agents) 绑定设备。
 5. **Play 互动：** 打招呼、加油、跳跃和挥棒动画（部分含角色语音）。
 6. **Battle 战斗：** 类似解压木鱼，按 OK 键挥棒打击，怪物自动轮换，并保存累计打击次数。
 7. **Settings 设置：** 亮度、音量、自动息屏时长、Wi-Fi，以及切换壁纸，支持 2 种按时间变化的固定场景动态壁纸或每日随机探索的星铁场景。
@@ -23,6 +23,8 @@
 首次启动按照屏幕提示，用手机扫码连接热点配网；连接热点后如未自动弹出配网页，手动访问 [http://192.168.4.1](http://192.168.4.1) 可选择 Wi-Fi。联网校时和 Chat 需要网络。
 
 主页面通过 UP／DOWN 可在 **Focus → Days → Chat → Play → Battle → Settings** 功能间切换，OK 进入。长按 OK 通常用于返回或停止当前互动，具体以屏幕提示为准。息屏后的第一次按键只负责唤醒。
+
+首次开启 Chat 时，请用浏览器登录[小智控制台](https://xiaozhi.me/console/agents)，点击右上角 **添加设备**，输入设备屏幕中角色上方文字气泡显示的 **6 位数字**，完成设备绑定。
 
 Chat 为非连续语音对话，使用外部小智服务，需要用户手动开启，按 OK 结束录音或取消播放回复。Chat 未开启或出错时，长按 OK 可查看本机最近 15 条聊天记录。
 
@@ -102,7 +104,7 @@ from *Honkai: Star Rail*, made for **FoloToy AI Passport**.
 1. **Everyday companionship:** blinking, nighttime sleeping idle animation, and automatic greetings on startup or screen wake.
 2. **Focus:** a fixed 25-minute countdown or a count-up timer, with pausing and saved focus records.
 3. **Days:** a calendar showing each day's accumulated focus time, plus a *Honkai: Star Rail* launch anniversary page with a departing-train animation and chip-style music.
-4. **Chat:** non-continuous voice exchanges through XiaoZhi AI, saving the latest 15 text chat entries locally. Connect to Wi-Fi and bind the device at [xiaozhi.me](https://xiaozhi.me/).
+4. **Chat:** non-continuous voice exchanges through XiaoZhi AI, saving the latest 15 text chat entries locally. Connect to Wi-Fi and bind the device at [xiaozhi.me](https://xiaozhi.me/console/agents).
 5. **Play:** greeting, encouragement, jump and bat-swing animations, some with character voice clips.
 6. **Battle:** a relaxing tap-to-hit interaction: press OK to swing the bat, cycle through enemies automatically and save the total hit count.
 7. **Settings:** brightness, volume, screen-off timeout, Wi-Fi and wallpaper selection, with two fixed scenes that change with the time of day or a random *Honkai: Star Rail* exploration scene each day.
@@ -112,6 +114,8 @@ from *Honkai: Star Rail*, made for **FoloToy AI Passport**.
 On first boot, follow the screen prompts and scan the QR code with your phone to join the setup hotspot. If the configuration page does not open automatically, visit [http://192.168.4.1](http://192.168.4.1) after joining the hotspot to select a Wi-Fi network. Time synchronization and Chat require a network connection.
 
 On the home screen, UP / DOWN select **Focus → Days → Chat → Play → Battle → Settings**, and OK opens the selected feature. Holding OK generally returns or stops the current interaction; follow the on-screen hints. The first press after screen-off only wakes the display.
+
+When you first open Chat, sign in to the [XiaoZhi console](https://xiaozhi.me/console/agents) in a browser. Click **Add Device** in the upper-right corner, then enter the **6-digit code** shown in the text bubble above the character on the device screen to complete binding.
 
 Chat uses the external XiaoZhi service for non-continuous voice exchanges and must be started manually. Press OK to finish recording or cancel reply playback. When Chat is inactive or in an error state, hold OK to view the latest 15 locally saved text entries.
 
