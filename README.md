@@ -8,6 +8,8 @@
 
 ## 界面预览
 
+玩法介绍视频：[B站观看](https://www.bilibili.com/video/BV1tUnV6zEYQ/)
+
 ## 功能
 
 1. **日常陪伴：** 默认眨眼、夜间睡眠待机动画，以及开机／唤醒屏幕时自动打招呼。
@@ -98,6 +100,8 @@ A non-commercial fan-made character companion featuring Stelle, the Trailblazer
 from *Honkai: Star Rail*, made for **FoloToy AI Passport**.
 
 ## UI preview
+
+Introduction video: [Watch on Bilibili](https://www.bilibili.com/video/BV1tUnV6zEYQ/)
 
 ## What it does
 
